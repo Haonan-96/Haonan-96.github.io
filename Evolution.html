@@ -47,57 +47,52 @@
 							<!-- Post -->
 								<article class="box post">
 									<header>
-										<h2><strong>Let's explore the most popular songs </strong><br />
-											in the 60'S</h2>
+										<h2><strong>Evolution</strong><br />
+											</h2>
 									</header>
 									<!-- <p><img src="images/60.jpg" width="800" height="300" align="center"/> </p> -->
-									<span class="image featured"><img src="images/60.jpg" height='420' alt="" /></span>
-									<h3>Network Analysis</h3>
-									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-									Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-									<p>Erat lorem ipsum veroeros consequat magna tempus lorem ipsum consequat
-									Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit ligula
-									vel quam viverra sit amet mollis tortor congue. Sed quis mauris sit amet
-									magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada in,
-									tristique Curabitur leo nibh, rutrum eu malesuada in, tristique
-									at erat lorem ipsum dolor sit amet lorem ipsum sed consequat magna
-									tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros consequat
-									magna tempus</p>
-									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-									Curabitur leo nibh, rutrum eu malesuada in tristique</p>
-									<h3>Sentiment Analysis</h3>
-									<p>Consequat Phasellus laoreet massa id in, tristique at erat lorem
-									ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna.</p>
-									<p>Phasellus laoreet massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan tristique.
-									Curabitur leo nibh, rutrum eu malesuada in tristique</p>
+									<!-- <h3>Network Analysis</h3> -->
+									<p>
+									Evolution in music; quite a wide topic. Where should we start? First of all, by getting a wide dataset.  
+									<strong>Rolling Stone</strong> magazine is going to help us. <strong>Rolling Stone</strong> 
+									is an American monthly magazine that focuses on music,politics, and popular culture. 
+									It was founded in San Francisco. The first magazine was released in 1967 
+									and featured John Lennon on the cover and was published every two weeks ever since. It is known for 
+									provocative photography and its cover photos, featuring musicians, politicians, athletes, and actors.
+									</p>
+
+									<span class="image featured"><img src="images/Rolling Stone.jpg" height='620' alt="" /></span>
+
+									<p>
+									In September 2021 they made a list of the 500 Greatest Songs of All Time. More than 250 artists,
+									writers, and industry figures helped choose a brand-new list full of historic favorites,
+									world-changing anthems and new classics. Here you can see 
+									<a href="https://www.rollingstone.com/music/music-news/500-greatest-songs-voters-list-1225358/">how the 500 were selected</a> 
+									Thanks to this list we have the favorite songs for the last 50 years along with the singer and 
+									the year of production. So now it is time for some Social Graph magic!
+									</p>
+
+									<p>
+									There are two main studies that we are going to perform. One is focused on genres 
+									whereas the other one’s main subject is sentiment, singer’s feelings. Keep reading for both!
+								    </p>
+
+									<h3>GENRE EVOLUTION</h3>
+
+									<p>
+									Thanks to our 500 top songs list we know what are the most known artists of all time.
+									Now what we need is to find out the artist’s genre information. Wikipedia pages will tell us.
+									Some pages were not easy to access automatically. 
+									So some magic-coding had to be done to extract the artists ourselves. 
+								    </p>
+
+									<p>
+									Now we have the genders played by all the singers in the list. There are nearly 200 hundred! 
+									The following graph shows the genres played by at least 10 artists.
+								    </p>
+
+									<span class="image featured"><img src="images/Genre.jpg" height='500' alt="" /></span>
+
 									<h3>Conclusion</h3>
 									<p>Nullam dolore etiam sed massa id in, tristique at erat lorem
 									ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
