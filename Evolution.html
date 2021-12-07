@@ -93,22 +93,105 @@
 
 									<span class="image featured"><img src="images/Genre.jpg" height='550' alt="" /></span>
 
-									<h3>Conclusion</h3>
-									<p>Nullam dolore etiam sed massa id in, tristique at erat lorem
-									ipsum dolor sit amet lorem ipsum sed consequat magna tempus veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna.</p>
-									<p>Sed massa id justo mattis pharetra. Fusce suscipit
-									ligula vel quam viverra sit amet mollis tortor congue. Sed quis mauris
-									sit amet magna accumsan tristique. Curabitur leo nibh, rutrum eu malesuada
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									in, tristique at erat lorem ipsum dolor sit amet lorem ipsum sed consequat
-									magna tempus veroeros lorem sed tempus aliquam lorem ipsum veroeros
-									consequat magna tempus lorem ipsum consequat Phasellus laoreet massa id
-									justo mattis pharetra. Fusce suscipit ligula vel quam viverra sit amet
-									mollis tortor congue. Sed quis mauris sit amet magna accumsan.</p>
+									<p>
+									Okay, so now we have the genres. But can we find the connections between them? 
+									Links between genres? Of course we can, Graphs please!
+								    </p>
+
+									<p>
+									Artists become nodes and these nodes will be connected through the genres they play. 
+									To make it more visual we first color the nodes by year.
+									</p>
+
+									<p>
+									(we need more labels in the graph)
+									</p>
+
+									<p>
+									In this second graphs we color the nodes by rank and sized them by degree.
+									</p>
+
+									<p>
+									(photo of the graph but we need the labels on it)
+									</p>
+
+									<p>
+									The graph is very conected, and it is hard to see any groupings of nodes. 
+									But surprisingly in both of the graphs we see that there are two groups of nodes 
+									not as linked to the rest of the graph. And what is more surprisingly even is that 
+									this detachment from the main group does not depend either on the year or the rank on the list. 
+									So, who are these artists and what genre do they belong to?
+									</p>
+
+									<p>
+									We now want to find out what are the most played genres over the decades. How do we find this? 
+									How do we detect if the genre of an artist is close to the rest?</br> 
+									Thanks to our graph and its links by genres we can calculate the centrality degree.</br> 
+									A low degree centrality indicates that an artist is very different in terms of genre 
+									compared to the rest, while a high degree centrality indicates that an artist plays genres 
+									that are close to what others are playing. 	
+									</p>
+
+									<p>
+									With a bit of coding, we can calculate the degree centrality of each node. 
+									We add to each singer their correspondent degree and we divide the data by decade. 
+									Getting the highest degree per decade enables us to see some slight change in the most listened genres. 
+									Rock really kicked it hard in the 60’s and 70’s. Even smaller branches of rock were famous back then: 
+									art rock or glam rock for example. However, the change of millennium changed the preferences. 
+									Rock does not lead the highest degree chart now. Hip Hop and Pop are now at the top! Same happens with R&B and Soul; 
+									top position in the 60´s but slowly decreasing as we get to the XXI century. 
+									</p>
+
+									<p>
+									But not everything is lost forever! Bob Dylan´s country in the 60’s reappears in 2015 thanks to…Taylor Swift! 
+									Red lips Juliets, ‘cause Country is another <a href="https://youtu.be/8xg3vE8Ie_E">Love Story</a>!
+									</p>
+
+									<span class="image featured"><img src="images/Love story.png" height='550' alt="" /></span>
+
+									<p>
+									Generally speaking, there is a slight change between music genres over the last 50 years. 
+									It looks like before music was meant to be listened. Whereas now dance music is the new trend. 
+									How long will this <a href="https://youtu.be/op5FxEs1aR0">Saturday Night Fever</a> will last?
+									</p>
+
+									<span class="image featured"><img src="images/Dance.jpg" height='500' alt="" /></span>
+
+									<p>
+									Sometimes, less is more. So to analyze genres in more detail we are going to only consider genres 
+									that are present in more than 40 artists. We will connect artist only I they share one of these genres. 
+									If they share multiple genres that we will color it by the most popular one.
+									</p>
+
+									<p>
+									Blues, Hip Hop, Soul, r&b, Rock and Pop are the winners. Let’s see how connected are they. 
+									</p>
+
+									<p>
+									(add photo of graph but we still need the labels)
+									</p>
+
+									<p>
+									This graph tells quite a lot. Main genres, not surprisingly, are well connected 
+									but we can see that there are different communities formed; boundaries between genres of music are well defined. 
+									Also, in each community there are nodes from different years; this means that within each decade 
+									there are representatives of each type of music. 
+									</p>
+
+									<p>
+									Also, as it was expected, these genres seem to be responsible for most of the connections in the graph. 
+									The structure has not changed much if we compare it to the previous one with all the genres.
+									</p>
+
+									<p>
+									Let’s now do the same exercise but the other way round. We get the least popular genres and we see 
+									how are they connected. We only get the genres that have less than 17 artists. We color the edges 
+									according to the genre they share. If they share multiple genres, we color them by the most popular genre.
+									</p>
+
+									<p>
+									There are more than 40 genres to explore. Shock rock, Latin pop or Britpop are some of them. 
+									</p>
 								</article>
 
 						</div>
